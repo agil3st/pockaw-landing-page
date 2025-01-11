@@ -10,38 +10,42 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link href="./output.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
     </style>
 </head>
-<body class="bg-background text-text">
-    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
-        <nav class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-2xl font-bold text-primary">Pockaw</a>
-                <div class="hidden md:flex space-x-4">
-                    <a href="#features" class="hover:text-secondary transition-colors">Features</a>
-                    <a href="#how-it-works" class="hover:text-secondary transition-colors">How It Works</a>
-                    <a href="#community" class="hover:text-secondary transition-colors">Community</a>
-                    <a href="#faq" class="hover:text-secondary transition-colors">FAQ</a>
-                </div>
-                <a href="https://github.com/agil3st/pockaw/" target="_blank" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-secondary transition-colors">Get Started</a>
-            </div>
-        </nav>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <img src="./assets/images/pockaw-logo-transparent.png" alt="Pockaw Logo" class="h-8 w-8 mr-2">
+                <span class="text-2xl font-bold bg-black text-transparent bg-clip-text">Pockaw</span>
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#features" class="hover:text-[#e50855]">Features</a></li>
+                    <li><a href="#platforms" class="hover:text-[#e50855]">Download</a></li>
+                    <li><a href="#about" class="hover:text-[#e50855]">About</a></li>
+                </ul>
+            </nav>
+            <a href="https://discord.gg/krss2UktDa" target="_blank" class="bg-[#738ADB] hover:bg-[#734ACE] text-white px-4 py-2 rounded-lg hover:bg-primary transition-colors">
+                <i class="ti ti-brand-discord mr-2"></i> Join Discord
+            </a>
+        </div>
     </header>
 
-    <main class="pt-16">
-        <!-- Hero Section -->
-        <section class="bg-background py-20">
+    <main>
+        <section class="pt-24 pb-16 bg-[#00cccd] text-white">
             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Meet Pockaw: Your best finance buddy for smarter future!</h1>
-                    <p class="text-xl mb-6">Offline-first, ad-free, and cross-platform budgeting app that puts you in control of your finances.</p>
-                    <a href="#downloads" class="bg-primary text-white py-3 px-6 rounded-lg hover:bg-secondary transition-colors inline-block">Download Now (Coming Soon)</a>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Meet <span class="text-black">Pockaw</span><br>Your best finance buddy for smarter future!</h1>
+                    <p class="text-xl mb-6">100% free, offline-first, no annoying ads, and cross-platform budgeting app that puts you in control of your finances — <strong>more fun than spreadsheet-based</strong>.</p>
+                    <a href="#platforms" class="bg-primary text-white py-3 px-6 rounded-lg hover:bg-secondary transition-colors inline-block">Coming Soon</a>
                 </div>
                 <div class="md:w-1/2">
                     <img src="./assets/images/pockaw-logo-transparent.png" alt="Pockaw App UI" class="w-full max-w-md mx-auto">
@@ -49,66 +53,85 @@
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section id="features" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12">Why Choose Pockaw?</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                        <h3 class="text-xl font-bold mb-2">Offline-First</h3>
-                        <p>Manage your finances anytime, anywhere - no internet required!</p>
+        <section class="py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="flex items-start">
+                        <i class="ti ti-receipt text-4xl text-[#00cccd] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Expense Tracking</h3>
+                            <p>Log and categorize daily expenses easily</p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <h3 class="text-xl font-bold mb-2">Cross-Platform</h3>
-                        <p>Available on Android, iOS, desktop, and web browsers.</p>
+                    <div class="flex items-start">
+                        <i class="ti ti-cash text-4xl text-[#e50855] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Income Management</h3>
+                            <p>Track multiple income sources in one place</p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-                        </svg>
-                        <h3 class="text-xl font-bold mb-2">Ad-Free</h3>
-                        <p>No ads, no distractions. Just pure financial management.</p>
+                    <div class="flex items-start">
+                        <i class="ti ti-target-arrow text-4xl text-[#731fe0] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Budget Goals</h3>
+                            <p>Set and monitor spending goals to stay on budget</p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        <h3 class="text-xl font-bold mb-2">Customizable</h3>
-                        <p>Tailor categories, analytics, and reports to your needs.</p>
+                    <div class="flex items-start">
+                        <i class="ti ti-chart-pie text-4xl text-[#ad25da] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Expense Analytics</h3>
+                            <p>Gain insights through visual breakdowns of spending</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="ti ti-bell text-4xl text-[#d8cc1b] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Reminders & Notifications</h3>
+                            <p>Get alerts for bill due dates and monthly goals</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="ti ti-currency-dollar text-4xl text-[#00cccd] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Multi-Currency Support</h3>
+                            <p>Manage finances across different currencies</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- How It Works Section -->
-        <section id="how-it-works" class="py-20 bg-background">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
-                <div class="flex flex-col md:flex-row justify-around items-center">
+        <section id="signature-feature" class="py-16 bg-gradient-to-r from-[#731fe0] to-[#e50855] text-white">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">🎉 Signature Feature</h2>
+                <h3 class="text-2xl font-semibold mb-4">Advanced Goal Planning</h3>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                    Set up multiple checklist goals for any occasion,<br>from <strong>wedding plans</strong> and <strong>new house furniture</strong> to <strong>wishlist shopping</strong>.
+                </p>
+                <a href="#" class="bg-white text-[#731fe0] hover:bg-gray-100 px-8 py-4 rounded-lg inline-block text-lg font-semibold">
+                    Start Planning Your Goals
+                </a>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="py-16 bg-gray-100">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-12">How It Works</h2>
+                <div class="flex flex-col md:flex-row justify-around items-center gap-8">
                     <div class="text-center mb-8 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                        </svg>
+                        <i class="ti ti-clipboard-list text-6xl mb-4 text-[#00cccd]"></i>
                         <h3 class="text-xl font-bold mb-2">1. Set Your Goals</h3>
                         <p>Define your financial objectives and budgets.</p>
                     </div>
                     <div class="text-center mb-8 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
+                        <i class="ti ti-receipt text-6xl mb-4 text-[#e50855]"></i>
                         <h3 class="text-xl font-bold mb-2">2. Track Expenses & Income</h3>
                         <p>Log your transactions and categorize them easily.</p>
                     </div>
                     <div class="text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        </svg>
+                        <i class="ti ti-chart-bar text-6xl mb-4 text-[#731fe0]"></i>
                         <h3 class="text-xl font-bold mb-2">3. Achieve Financial Clarity</h3>
                         <p>Gain insights and make informed financial decisions.</p>
                     </div>
@@ -116,99 +139,133 @@
             </div>
         </section>
 
-        <!-- Community Section -->
-        <section id="community" class="py-20 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-6">Join the Pockies Community!</h2>
-                <p class="text-xl mb-8">Connect with fellow budgeters, share tips, and discuss financial strategies.</p>
-                <div class="flex justify-center space-x-4">
-                    <a href="https://discord.gg/krss2UktDa" target="_blank" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-secondary transition-colors">Join Discord</a>
-                    <a href="https://github.com/agil3st/pockaw/discussions" target="_blank" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-secondary transition-colors">GitHub Discussions</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="py-20 bg-background">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-6">Pockaw is 100% Free and Open Source!</h2>
-                <p class="text-xl mb-8">No hidden fees, no premium features. Everyone gets full access.</p>
-                <a href="https://github.com/agil3st/pockaw/" target="_blank" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-secondary transition-colors">View on GitHub</a>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12">What Our Users Say</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-background p-6 rounded-lg shadow-md">
-                        <p class="mb-4">"Pockaw has completely transformed how I manage my finances!"</p>
-                        <p class="font-bold">- Alex</p>
+        <section id="features" class="py-16">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose Pockaw?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i class="ti ti-coin text-4xl mb-4 text-[#00cccd]"></i>
+                        <h3 class="text-xl font-semibold mb-2">100% Free & Open Source</h3>
+                        <p class="text-gray-600">No hidden fees, no premium features. Everyone gets full access.</p>
                     </div>
-                    <div class="bg-background p-6 rounded-lg shadow-md">
-                        <p class="mb-4">"I love how I can use Pockaw offline. It's perfect for my travels!"</p>
-                        <p class="font-bold">- Sarah</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i class="ti ti-devices text-4xl mb-4 text-[#e50855]"></i>
+                        <h3 class="text-xl font-semibold mb-2">Cross-Platform</h3>
+                        <p class="text-gray-600">Seamless use across Android, iOS*, macOS*, Windows, Linux*, and even the browser.</p>
                     </div>
-                    <div class="bg-background p-6 rounded-lg shadow-md">
-                        <p class="mb-4">"The community support is amazing. I've learned so much about budgeting!"</p>
-                        <p class="font-bold">- Mike</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i class="ti ti-user-plus text-4xl mb-4 text-[#731fe0]"></i>
+                        <h3 class="text-xl font-semibold mb-2">No Registration Needed</h3>
+                        <p class="text-gray-600">Jump right in without the hassle of creating an account or requesting access like spreadsheet-based does.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i class="ti ti-ad-off text-4xl mb-4 text-[#ad25da]"></i>
+                        <h3 class="text-xl font-semibold mb-2">No Ads, Always</h3>
+                        <p class="text-gray-600">Say goodbye to annoying ads; Pockaw is focused solely on helping you manage your finances.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i class="ti ti-wifi-off text-4xl mb-4 text-[#d8cc1b]"></i>
+                        <h3 class="text-xl font-semibold mb-2">Offline-first</h3>
+                        <p class="text-gray-600">Your data is always accessible, even offline. Connect only when you want to sync across devices.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i class="ti ti-shield-lock text-4xl mb-4 text-[#00cccd]"></i>
+                        <h3 class="text-xl font-semibold mb-2">Security Focused</h3>
+                        <p class="text-gray-600">For offline use, you are in charge of your own data. You can also set a Biometrics and PIN if necessary.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="py-20 bg-background">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Is Pockaw really free?</h3>
-                        <p>Yes, Pockaw is 100% free and open-source. There are no hidden fees or premium features.</p>
+        <section id="platforms" class="py-16 bg-gray-100">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Available on All Platforms</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <i class="ti ti-device-mobile text-6xl mb-4 text-[#00cccd]"></i>
+                        <h3 class="text-xl font-semibold mb-2">Mobile</h3>
+                        <p class="text-gray-600 mb-4">Android and iOS apps for on-the-go finance management.</p>
+                        <div class="space-y-2">
+                            <a href="#" class="bg-black text-white px-6 py-2 rounded-lg inline-flex items-center justify-center hover:bg-gray-800 transition-colors w-full">
+                                <i class="ti ti-brand-google-play mr-2"></i> Google Play
+                            </a>
+                            <a href="#" class="bg-black text-white px-6 py-2 rounded-lg inline-flex items-center justify-center hover:bg-gray-800 transition-colors w-full">
+                                <i class="ti ti-brand-apple mr-2"></i> App Store
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Can I use it offline?</h3>
-                        <p>Pockaw is designed with an offline-first approach. You can use it anytime, anywhere.</p>
+                    <div class="text-center">
+                        <i class="ti ti-device-desktop text-6xl mb-4 text-[#e50855]"></i>
+                        <h3 class="text-xl font-semibold mb-2">Desktop</h3>
+                        <p class="text-gray-600 mb-4">Windows, macOS, and Linux support for desktop users.</p>
+                        <div class="space-y-2">
+                            <a href="#" class="bg-[#0078d7] text-white px-6 py-2 rounded-lg inline-flex items-center justify-center hover:bg-[#006abc] transition-colors w-full">
+                                <i class="ti ti-brand-windows mr-2"></i> Microsoft Store
+                            </a>
+                            <a href="#" class="bg-[#e50855] text-white px-6 py-2 rounded-lg inline-flex items-center justify-center hover:bg-[#ad25da] transition-colors w-full">
+                                <i class="ti ti-brand-apple mr-2"></i> macOS
+                            </a>
+                            <a href="#" class="bg-[#e50855] text-white px-6 py-2 rounded-lg inline-flex items-center justify-center hover:bg-[#ad25da] transition-colors w-full">
+                                <i class="ti ti-brand-ubuntu mr-2"></i> Linux
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Is my data secure?</h3>
-                        <p>Your privacy and data security are our top priorities. Pockaw stores all your data locally on your device, and you have full control over when and how to sync across platforms.</p>
+                    <div class="text-center">
+                        <i class="ti ti-world text-6xl mb-4 text-[#731fe0]"></i>
+                        <h3 class="text-xl font-semibold mb-2">Web</h3>
+                        <p class="text-gray-600 mb-4">Access your finances directly from any web browser.</p>
+                        <a href="#" class="bg-[#731fe0] text-white px-6 py-2 rounded-lg inline-block hover:bg-[#5a16b0] transition-colors w-full text-center">
+                            <i class="ti ti-browser mr-2"></i> Use Pockaw Web
+                        </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 bg-[#00cccd]">
+            <div class="max-w-5xl mx-auto px-4 text-center text-white">
+                <h2 class="text-3xl font-bold mb-8">About Pockaw</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Pockaw is a community-driven project aimed at making personal finance management accessible to everyone. Our mission is to provide a powerful, free, and open-source tool that helps people take control of their finances.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <a href="https://github.com/agil3st/pockaw" target="_blank" class="bg-[#333333] text-white font-bold hover:bg-[#222222] px-6 py-4 rounded-lg inline-flex items-center">
+                        <i class="ti ti-brand-github mr-2"></i> View on GitHub
+                    </a>
+                    <a href="https://discord.gg/krss2UktDa" target="_blank" class="bg-[#738ADB] text-white font-bold hover:bg-[#728EEC] px-6 py-4 rounded-lg inline-flex items-center">
+                        <i class="ti ti-brand-discord mr-2"></i> Join Discord
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-primary text-white py-8">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <h3 class="text-2xl font-bold">Pockaw</h3>
-                    <p>Your Pocket-Friendly Budget Buddy</p>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-10">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Pockaw</h3>
+                    <p>Your free and open-source budgeting companion.</p>
                 </div>
-                <nav class="flex flex-wrap justify-center md:justify-end space-x-4">
-                    <a href="#" class="hover:text-tertiary transition-colors">About Us</a>
-                    <a href="privacy-policy.html" class="hover:text-tertiary transition-colors">Privacy Policy</a>
-                    <a href="terms-and-conditions.html" class="hover:text-tertiary transition-colors">Terms & Conditions</a>
-                </nav>
+                <div class="text-center">
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="hover:text-[#00cccd]">Features</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-[#00cccd]">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html" class="hover:text-[#00cccd]">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://github.com/agil3st/pockaw/discussions" class="hover:text-[#00cccd]">Discussions</a></li>
+                        <li><a href="https://discord.gg/krss2UktDa" class="hover:text-[#00cccd]">Discord</a></li>
+                        <li><a href="https://github.com/agil3st/pockaw/discussions/11" class="hover:text-[#00cccd]">Feature Request</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="mt-8 flex justify-center space-x-4">
-                <a href="https://github.com/agil3st/pockaw" target="_blank" class="text-white hover:text-tertiary transition-colors">
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-                <a href="#" class="text-white hover:text-tertiary transition-colors">
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-                <a href="#" class="text-white hover:text-tertiary transition-colors">
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
-                </a>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Pockaw. All rights reserved.</p>
             </div>
         </div>
     </footer>
